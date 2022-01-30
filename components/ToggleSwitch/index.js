@@ -1,9 +1,13 @@
-import React, {useCallback, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import styles from './style.module.scss';
 import cn from "classnames";
 
-const ToggleSwitch = ({ onChange }) => {
+const ToggleSwitch = ({ onChange, defaultValue }) => {
     const [toggle, setToggle] = useState(false);
+
+    useEffect(() => {
+        setToggle(defaultValue);
+    }, [defaultValue]);
 
     const onToggleClick = useCallback(() => {
         setToggle(!toggle);

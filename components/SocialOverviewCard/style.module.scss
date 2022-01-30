@@ -1,6 +1,5 @@
-
 .card {
-  background: #F1F3FA;
+  background: var(--theme-box-background);
   border-radius: 5px;
   padding: 26px 30px 19px 24px;
   display: flex;
@@ -11,7 +10,7 @@
   cursor: pointer;
 
   &:hover {
-    background: #E1E4F0;
+    background: var(--theme-box-hover-background);
   }
 
   .indicatorContainer {
@@ -24,7 +23,7 @@
       font-weight: bold;
       font-size: 14px;
       line-height: 17px;
-      color: #63687D;
+      color: var(--theme-seconday-color);
     }
   }
 
@@ -37,7 +36,7 @@
       font-weight: bold;
       font-size: 32px;
       line-height: 39px;
-      color: #1D1F29;
+      color: var(--theme-primary-color);
     }
 
     svg {

@@ -10,7 +10,9 @@ const DarkModeToggleSwitch = () => {
     }, []);
 
     return (
-        <ToggleSwitch onChange={onChange} />
+        <ToggleSwitch onChange={onChange}
+                      defaultValue={theme === 'dark'}
+        />
     );
 };
 

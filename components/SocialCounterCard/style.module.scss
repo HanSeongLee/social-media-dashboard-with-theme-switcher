@@ -1,7 +1,6 @@
-
 .card {
   position: relative;
-  background: #F1F3FA;
+  background: var(--theme-box-background);
   border-radius: 5px;
   overflow: hidden;
   padding: 32px 24px 24px;
@@ -23,14 +22,14 @@
   }
 
   &:hover {
-    background: #E1E4F0;
+    background: var(--theme-box-hover-background);
   }
 
   .username {
     font-weight: bold;
     font-size: 12px;
     line-height: 15px;
-    color: #63687D;
+    color: var(--theme-seconday-color);
     display: flex;
     align-items: center;
     grid-gap: 8px;
@@ -48,7 +47,7 @@
     line-height: 48px;
     text-align: center;
     letter-spacing: -2px;
-    color: #1D1F29;
+    color: var(--theme-primary-color);
     margin-bottom: 9px;
   }
 
@@ -58,7 +57,7 @@
     text-align: center;
     letter-spacing: 5px;
     text-transform: uppercase;
-    color: #63687D;
+    color: var(--theme-seconday-color);
     margin-bottom: 25px;
   }
 }
