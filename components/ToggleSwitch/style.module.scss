@@ -1,0 +1,31 @@
+
+.toggleSwitch {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  background: #AEB3CB;
+  border-radius: 12px;
+  cursor: pointer;
+
+  &.on {
+    background: linear-gradient(225deg, #40DB82 0%, #388FE7 100%);;
+
+    &::before {
+      left: 4px;
+      background: #252B42;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 2px);
+    width: 18px;
+    height: 18px;
+    background: #F1F3FA;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    content: "";
+    transition: 0.3s;
+  }
+}
