@@ -1,0 +1,41 @@
+
+.card {
+  background: #F1F3FA;
+  border-radius: 5px;
+  padding: 26px 30px 19px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-gap: 21px;
+
+  .indicatorContainer {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .unit {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 17px;
+      color: #63687D;
+    }
+  }
+
+  .counterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .count {
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 39px;
+      color: #1D1F29;
+    }
+
+    svg {
+      margin-right: 2px;
+    }
+  }
+}
