@@ -1,0 +1,85 @@
+
+.card {
+  position: relative;
+  background: #F1F3FA;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 32px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--card-bar-color);
+    width: 100%;
+    height: 4px;
+    content: "";
+  }
+
+  .username {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #63687D;
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    margin-bottom: 24px;
+
+    > svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .count {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #1D1F29;
+    margin-bottom: 9px;
+  }
+
+  .indicator {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #63687D;
+    margin-bottom: 25px;
+  }
+
+  .todayCount {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #1EB589;
+    display: flex;
+    align-items: center;
+    grid-gap: 4px;
+
+    &.down {
+      color: #DC414C;
+
+      .upIcon {
+        transform: rotate(180deg);
+
+        path {
+          fill: #DC414C;
+        }
+      }
+    }
+
+    .upIcon {
+      width: 8px;
+      height: 4px;
+    }
+  }
+}
