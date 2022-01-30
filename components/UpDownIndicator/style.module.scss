@@ -1,0 +1,27 @@
+
+.indicator {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #1EB589;
+  display: flex;
+  align-items: center;
+
+  &.down {
+    color: #DC414C;
+
+    .upIcon {
+      transform: rotate(180deg);
+
+      path {
+        fill: #DC414C;
+      }
+    }
+  }
+
+  .upIcon {
+    width: 8px;
+    height: 4px;
+    margin-right: 4px;
+  }
+}

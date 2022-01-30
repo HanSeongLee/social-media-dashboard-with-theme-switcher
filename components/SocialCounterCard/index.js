@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './style.module.scss';
-import UpIcon from '/public/icons/icon-up.svg';
-import cn from 'classnames';
+import UpDownIndicator from "../UpDownIndicator";
 
 const SocialCounterCard = ({
                                icon, username, count, indicator = 'followers',
@@ -23,12 +22,9 @@ const SocialCounterCard = ({
             <p className={styles.indicator}>
                 {indicator}
             </p>
-            <div className={cn(styles.todayCount, {
-                [styles.down]: todayCount < 0,
-            })}>
-                <UpIcon className={styles.upIcon}/>
-                {todayCount > 0 ? todayCount : todayCount * -1} Today
-            </div>
+            <UpDownIndicator count={todayCount}
+                             unit={' Today'}
+            />
         </div>
     );
 };
