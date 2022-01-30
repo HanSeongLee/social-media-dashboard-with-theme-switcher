@@ -7,6 +7,12 @@
   flex-direction: column;
   justify-content: center;
   grid-gap: 21px;
+  transition: background 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: #E1E4F0;
+  }
 
   .indicatorContainer {
     flex: 1;
